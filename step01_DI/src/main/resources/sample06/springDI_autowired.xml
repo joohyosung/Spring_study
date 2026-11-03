@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+<!--외부의 properties 위치 설정-->
+    <context:property-placeholder location="db.properties"/>
+    <context:annotation-config/>
+    <!--객체생성-->
+    <bean class="sample06.EmpDTO" id="empDto">
+        <property name="empno" value="100"/>
+    </bean>
+
+    <bean class="sample06.EmpDTO" id="dto">
+        <property name="empno" value="200"/>
+    </bean>
+
+    <bean class="sample06.EmpService" id="service"/>
+
+    <bean class="sample06.EmpController" id="controller"/>
+</beans>
