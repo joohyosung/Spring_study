@@ -14,6 +14,7 @@ public class TimerAdvice {
      * @return
      */
     public Object around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+        // 사전처리
         String methodName = proceedingJoinPoint.getSignature().getName();
         System.out.println("[LOG] " + methodName + " 호출되기 전 입니다.");
 

@@ -4,11 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
 <!--객체 생성-->
     <bean class="kosta.service.MemberServiceImpl" id="target"/>
+    <bean class="kosta.service.GoodsService" id="target2"/>
     <bean class="kosta.advice.TimerAdvice" id="timerAdvice"/>
 <!--aop 설정-->
-    <aop:config>
+    <aop:config >
         <aop:aspect ref="timerAdvice">
-            <aop:around method="around" pointcut="execution(* kosta.service.Member*.*(..))"/>
+            <aop:around method="around" pointcut="execution(* kosta.service.*.*(..))"/>
         </aop:aspect>
     </aop:config>
 </beans>

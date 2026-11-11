@@ -69,3 +69,6 @@ Desktop.ini
 !gradlew.bat
 !.mvn/wrapper/maven-wrapper.jar
 !gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ generated exploded web application output
+**/classes/artifacts/
