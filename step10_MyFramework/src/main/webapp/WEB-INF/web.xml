@@ -10,15 +10,10 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <!--
-   진입점 Controller(Servlet) 등록
-   spring의 진입점 DispatcherServlet 생성하면 자동으로
-   Spring IoC Container의 spring bean configuration 문서를 찾는다.
-   /WEB-INF/서블릿이름-servlet.xml이다.
-   -->
+  <!-- 진입점 Controller(Servlet) 등록 -->
   <servlet>
     <servlet-name>dispatcher</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <servlet-class>web.mvc.controller.DispatcherServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
   

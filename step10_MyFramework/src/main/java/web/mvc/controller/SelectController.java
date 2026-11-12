@@ -1,8 +1,5 @@
 package web.mvc.controller;
 
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
-
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -14,12 +11,12 @@ public class SelectController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("SelectController ½ÇÇà ÀÔ´Ï´Ù.....");
+		System.out.println("SelectController ì‹¤í–‰ ì…ë‹ˆë‹¤.....");
 		
-		request.setAttribute("message", "selectÀÇ °á°ú ÀÔ´Ï´Ù.");
+		request.setAttribute("message", "selectì˜ ê²°ê³¼ ì…ë‹ˆë‹¤.");//ë·°ì—ì „ë‹¬ë  ê°’ ${message}
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("selectResult");
+		mv.setViewName("selectResult.jsp");
 		
 		return mv;
 	}

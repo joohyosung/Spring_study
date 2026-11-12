@@ -4,12 +4,12 @@ import kosta.web.exception.BasicException;
 
 public interface UserService {
    /**
-    * check age
+    * 나이 체크
     * */
 	void ageCheck(int age)throws BasicException;
 	
 	/**
-	 * check id duplicate
+	 * 아이디 중복체크
 	 * */
 	void idCheck(String id) throws BasicException;
 }

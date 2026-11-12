@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>edu.kosta.spring</groupId>
+    <artifactId>spring-study</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Spring Study</name>
+    <modules>
+        <module>steop04_AOP</module>
+        <module>steop05_AOP_Annotation</module>
+        <module>step01_DI</module>
+        <module>step02_AOP</module>
+        <module>step03_Annotation</module>
+        <module>step06_Servlet</module>
+        <module>step07_AOP_exam_Anno</module>
+        <module>step08_Servlet</module>
+        <module>step09_Servlet_Login</module>
+        <module>step10_MyFramework</module>
+        <module>step11_MyFrameworkLIB</module>
+        <module>step12_WebMVC</module>
+        <module>step13_MVC_Product</module>
+    </modules>
+</project>

@@ -10,16 +10,17 @@
 </head>
 <body>
 
- <h1> MyFactoryFramework LIB TEST </h1>
+ <h1> MyFactoryFramework TEST </h1>
 <h3>
-  <a href="insert.do">등록하기 </a><p>
-  <a href="select.do">검색하기 </a><p>
-  <a href="update.do">수정하기 </a><p>
-  <a href="delete.do">삭제하기 </a><p>
-  <!--
-    아래 요청이 되면 Controller를 실행하고 message 저장해서 forward 방식으로 selectby.jsp로 이동
-  -->
-  <a href="delete.do?key=delete">조건검색하기 </a><p>
+  <a href="insert.do?key=insert">등록하기 </a><p>
+  <a href="select.do?key=select">검색하기 </a><p>
+  <a href="update.do?key=update">수정하기 </a><p>
+  <a href="delete.do?key=delete">삭제하기 </a><p>
+  
+  <!-- 아래 요청이 되면 Controller 를 실행하고 message저장해서 
+      foward방식으로 selectby.jsp이동한다.
+   -->
+   <a href="select.do?key=selectByNo">조건검색하기 </a><p>
 </h3>
 
 </body>

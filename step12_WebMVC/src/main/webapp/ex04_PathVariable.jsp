@@ -23,11 +23,13 @@
 
 
 <h2>/blog/* 설정부분</h2>
-<a href="blog/jang.do">요청1</a><p/>
+<a href="blog/jang">요청1</a><p/>
 
 <a href="blog/hee">요청2</a><p/>
 
 <a href="blog/kim">요청3</a><hr/>
+<a href="cafe/kim">요청4</a><hr/>
+<a href="/jang">요청5</a><hr/>
 
 
 
@@ -42,3 +44,10 @@
 
 </body>
 </html>
+
+
+
+
+
+
+

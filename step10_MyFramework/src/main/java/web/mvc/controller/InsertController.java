@@ -1,8 +1,5 @@
 package web.mvc.controller;
 
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
-
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -14,10 +11,10 @@ public class InsertController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		//µî·ÏÇÏ±â
-		System.out.println("InsertController ÀÔ´Ï´Ù. ");
+		//ë“±ë¡í•˜ê¸°
+		System.out.println("InsertController ì…ë‹ˆë‹¤. ");
 		
-		return new ModelAndView("index");//rediect¹æ½ÄÀ¸·Î ÀÌµ¿ÇØ¶ó.
+		return new ModelAndView("index.jsp", true);//rediectë°©ì‹ìœ¼ë¡œ ì´ë™í•´ë¼.
 	}
 
 }

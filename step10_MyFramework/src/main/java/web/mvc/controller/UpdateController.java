@@ -1,8 +1,5 @@
 package web.mvc.controller;
 
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
-
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -14,12 +11,12 @@ public class UpdateController implements Controller {
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("updateController ÀÔ´Ï´Ù......");
+		System.out.println("updateController ìž…ë‹ˆë‹¤......");
 		
-		request.setAttribute("message", "¼öÁ¤¿Ï·á ³»¿ëÀÔ´Ï´Ù....");
+		request.setAttribute("message", "ìˆ˜ì •ì™„ë£Œ ë‚´ìš©ìž…ë‹ˆë‹¤....");
 		
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("updateResult");
+		mv.setViewName("updateResult.jsp");
 		return mv;
 	}
 

@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="kosta.web.controlller">
+	<logger name="kosta.web">
 		<level value="info" />
 	</logger>
 	
